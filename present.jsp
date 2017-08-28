@@ -15,6 +15,35 @@
         padding-top: 2cm;
         padding-left: 4cm;
       }
+
+      body {
+        padding-top: 1cm;
+        
+      }
+
+      b {
+        color: #882D61;
+      }
+    
+
+      .pink-heading {
+        background-color: #EDCCDF;
+        color: #882D61;
+      }
+
+      .pink-body{
+        background-color: #9BC25D;
+        color: #355403;
+      }
+
+      .btn-pink{
+        background-color: #AA5384;
+        color: white;
+      }
+
+      .panel-pink{
+        border:2px solid pink;
+      }
     </style>
 
   </head>
@@ -57,9 +86,9 @@
         <div class="row">
           <div class="col-md-offset-3"></div>
           <div class="col-md-8">
-            <div class="panel panel-success">
+            <div class="panel panel-pink">
 
-              <div class="panel panel-heading">
+              <div class="panel panel-heading pink-heading">
                 <h1>Students System</h1>
               </div>  
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Students Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     
@@ -12,8 +12,33 @@
 
     <style>
       .top-con {
-        padding-top: 2cm;
-        padding-left: 4cm;
+        padding-top: 1cm;
+        padding-left: 5cm;
+      }
+
+      body {
+        padding-top: 1cm;
+        color: #882D61;
+      }
+    
+
+      .pink-heading {
+        background-color: #EDCCDF;
+        color: #882D61;
+      }
+
+      .pink-body{
+        background-color: #9BC25D;
+        color: #355403;
+      }
+
+      .btn-pink{
+        background-color: #AA5384;
+        color: white;
+      }
+
+      .panel-pink{
+        border:2px solid pink;
       }
     </style>
 
@@ -24,9 +49,9 @@
         <div class="row">
           <div class="col-md-offset-3"></div>
           <div class="col-md-8">
-            <div class="panel panel-success">
+            <div class="panel panel-pink">
 
-              <div class="panel panel-heading">
+              <div class="panel panel-heading pink-heading">
                 <h1>Students System</h1>
               </div>  
 
@@ -36,31 +61,31 @@
                     <div class="form-group">
                       <div class="form-group">
                         <label > Students ID</label>
-                        <input type="text" class="form-control" name="id" placeholder="Students ID">
+                        <input type="text" class="form-control" name="id" placeholder="Students ID" required>
 								      </div>
                       <div class="form-group">
                         <label > First Name</label>
-                        <input type="text" class="form-control" name="firstname" placeholder="Students First Name">
+                        <input type="text" class="form-control" name="firstname" placeholder="Students First Name" required>
 								      </div>
                       <div class="form-group">
                         <label > Last Name</label>
-                        <input type="text" class="form-control" name="lastname" placeholder="Students Last Name">
+                        <input type="text" class="form-control" name="lastname" placeholder="Students Last Name" required>
 								      </div>
                       <div class="form-group">
                         <label > Factory</label>
-                        <input type="text" class="form-control" name="factory" placeholder="Students factory Name">
+                        <input type="text" class="form-control" name="factory" placeholder="Students factory Name" required>
 								      </div>
                       <div class="form-group">
                         <label > Department</label>
-                        <input type="text" class="form-control" name="department" placeholder="Students Department Name">
+                        <input type="text" class="form-control" name="department" placeholder="Students Department Name" required>
 								      </div>
                       
                       <div class="form-group">
                         <label > Date of Birth</label>
-                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" required>
 								      </div>
                       
-                      <button type="submit" class="btn btn-primary">Submit</button>      
+                      <button type="submit" class="btn btn-pink">Submit</button>      
                     </div>
                   </form>
                 </div> 

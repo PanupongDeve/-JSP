@@ -20,37 +20,20 @@
   </head>
   <body>
     <%@ page import="java.util.Calendar" %>
-    <%! 
-        public int getAge(String date){
-            int yearnow = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR)-543;
-            
-            String[] a = date.split("/");
-            int yob = Integer.parseInt(a[2]);
-            int age = yearnow - yob;
-
-            return age;
-        } 
-        
-        public int getClass(String id){
-            int yearps = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);
-            id = id.substring(0,2);
-            
-            int now = Integer.parseInt(id);
-            int classnow = (yearps%2500+1) - now; 
-
-            return classnow;
-        }
-        
-    %>
-
     <%  
+        //getAge
         String date = request.getParameter("date");
+        int yearnow = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR)-543;      
+        String[] a = date.split("/");
+        int yob = Integer.parseInt(a[2]);
+        int age = yearnow - yob;
+
+        //getClass    
         String id = request.getParameter("id");
-
-        int age = getAge(date);
-        int classnow = getClass(id);
-        
-
+        id = id.substring(0,2);
+        int yearps = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);    
+        int now = Integer.parseInt(id);
+        int classnow = (yearps%2500+1) - now; 
     %>
 
     <div class="container top-con">

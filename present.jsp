@@ -33,7 +33,19 @@
         id = id.substring(0,2);
         int yearps = java.util.Calendar.getInstance().get(java.util.Calendar.YEAR);    
         int now = Integer.parseInt(id);
-        int classnow = (yearps%2500+1) - now; 
+        int classnow = (yearps%2500+1) - now;
+
+        //get Department By Id
+        String id2 = request.getParameter("id");
+        id2 = id2.substring(2,3);
+        int id2check = Integer.parseInt(id2);
+        String depart  = "";
+        if(id2check == 3){
+          depart = "Coe";
+        }else{
+          depart = "Not have department";
+        }
+        
     %>
 
     <div class="container top-con">
@@ -74,6 +86,9 @@
                     <%= classnow%>
                   </p>
 
+                  <p><b>Department:</b>
+                    <%= depart%>
+                  </p>
                     
                   
                 </div> 
